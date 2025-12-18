@@ -54,10 +54,10 @@
              */
 
             bindings = <
-&kp ESC         &as LS(Q) Q  &as LS(W) W  &as LS(E) E  &as LS(R) R  &as LS(T) T                                                     &as LS(Y) Y  &as LS(U) U      &as LS(I) I          &as LS(O) O      &as LS(P) P         &as LS(MINUS) MINUS
-&kp TAB         &as LS(A) A  &as LS(S) S  &as LS(D) D  &as LS(F) F  &as LS(G) G                                                     &as LS(H) H  &as LS(J) J      &as LS(K) K          &as LS(L) L      &as LS(SEMI) SEMI   &as LS(SQT) SQT
-&mt LCTRL CAPS  &as LS(Z) Z  &as LS(X) X  &as LS(C) C  &as LS(V) V  &as LS(B) B  &kp LC(C)                        &kp LC(V)         &as LS(N) N  &as LS(M) M      &as LS(COMMA) COMMA  &as LS(DOT) DOT  &as LS(FSLH) SLASH  &kp DEL
-                                                       &kp LALT     &kp LGUI     &mt RCTRL SPACE  &to 1    &mo 2  &mt RSHIFT ENTER  &lt 1 BSPC   &mt RALT KP_NUM
+&as NON_US_HASH ESC  &as LS(Q) Q  &as LS(W) W  &as LS(E) E  &as LS(R) R  &as LS(T) T                                                     &as LS(Y) Y  &as LS(U) U      &as LS(I) I          &as LS(O) O      &as LS(P) P         &as LS(MINUS) MINUS
+&kp TAB              &as LS(A) A  &as LS(S) S  &as LS(D) D  &as LS(F) F  &as LS(G) G                                                     &as LS(H) H  &as LS(J) J      &as LS(K) K          &as LS(L) L      &as LS(SEMI) SEMI   &as LS(SQT) SQT
+&mt LCTRL CAPS       &as LS(Z) Z  &as LS(X) X  &as LS(C) C  &as LS(V) V  &as LS(B) B  &kp LC(C)                        &kp LC(V)         &as LS(N) N  &as LS(M) M      &as LS(COMMA) COMMA  &as LS(DOT) DOT  &as LS(FSLH) SLASH  &kp DEL
+                                                            &kp LALT     &kp LGUI     &mt RCTRL SPACE  &to 1    &mo 2  &mt RSHIFT ENTER  &lt 1 BSPC   &mt RALT KP_NUM
             >;
 
             /* Left Encoder: Up/Down | Right Encoder: Left/Right */
@@ -69,9 +69,9 @@
             /* Layer 1: Nav / Num */
 
             bindings = <
-&kp ESC         &kp LC(X)  &as LS(N7) N7  &as LS(N8) N8  &as LS(N9) N9  &as COMMA DOT                                        &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp UP_ARROW  &kp LC(Q)  &Select_right  &trans
+&trans          &kp LC(X)  &as LS(N7) N7  &as LS(N8) N8  &as LS(N9) N9  &as COMMA DOT                                        &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp UP_ARROW  &kp LC(Q)  &Select_right  &trans
 &kp TAB         &kp LC(C)  &as LS(N4) N4  &as LS(N5) N5  &as LS(N6) N6  &as LS(N0) N0                                        &as LS(SEMI) SEMI  &kp LEFT_ARROW     &kp DOWN      &kp RIGHT  &Select_Down   &trans
-&mt LCTRL CAPS  &kp LC(V)  &as LS(N1) N1  &as LS(N2) N2  &as LS(N3) N3  &as LS(EQUAL) EQUAL  &trans                  &trans  &kp PLUS           &kp MINUS          &kp ASTRK     &kp FSLH   &kp FSLH       &kp DEL
+&mt LCTRL CAPS  &kp LC(V)  &as LS(N1) N1  &as LS(N2) N2  &as LS(N3) N3  &as LS(EQUAL) EQUAL  &trans                  &trans  &kp PLUS           &kp MINUS          &kp ASTRK     &kp FSLH   &kp BACKSLASH  &kp DEL
                                                          &trans         &kp ENTER            &trans  &to 2    &to 0  &trans  &trans             &trans
             >;
 
@@ -82,9 +82,9 @@
             /* Layer 2: Symbols / F-Keys */
 
             bindings = <
-&kp ESC         &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                                           &kp F9  &kp F10  &kp F11  &kp F12  &as LS(N0) N0  &kp MINUS
+&trans          &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                                           &kp F9  &kp F10  &kp F11  &kp F12  &as LS(N0) N0  &kp MINUS
 &kp TAB         &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0                                  &kp F5  &kp F6   &kp F7   &kp F8   &kp F10        &kp SQT
-&mt LCTRL CAPS  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &as LS(B) B      &trans                  &trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp FSLH       &kp DEL
+&mt LCTRL CAPS  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &trans                  &trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp FSLH       &kp DEL
                                                           &trans           &trans           &trans  &to 0    &to 0  &trans  &trans  &trans
             >;
 
