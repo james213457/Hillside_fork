@@ -69,7 +69,7 @@
             /* Layer 1: Nav / Num */
 
             bindings = <
-&kp ESC         &kp LC(X)  &as LS(N7) N7  &as LS(N8) N8  &as LS(N9) N9  &kp DOT                                              &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp UP_ARROW  &kp LC(Q)  &Select_right  &trans
+&kp ESC         &kp LC(X)  &as LS(N7) N7  &as LS(N8) N8  &as LS(N9) N9  &as COMMA DOT                                        &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp UP_ARROW  &kp LC(Q)  &Select_right  &trans
 &kp TAB         &kp LC(C)  &as LS(N4) N4  &as LS(N5) N5  &as LS(N6) N6  &as LS(N0) N0                                        &as LS(SEMI) SEMI  &kp LEFT_ARROW     &kp DOWN      &kp RIGHT  &Select_Down   &trans
 &mt LCTRL CAPS  &kp LC(V)  &as LS(N1) N1  &as LS(N2) N2  &as LS(N3) N3  &as LS(EQUAL) EQUAL  &trans                  &trans  &kp PLUS           &kp MINUS          &kp ASTRK     &kp FSLH   &kp FSLH       &kp DEL
                                                          &trans         &kp ENTER            &trans  &to 2    &to 0  &trans  &trans             &trans
