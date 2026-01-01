@@ -91,7 +91,9 @@
 
             /* Left Encoder: Up/Down | Right Encoder: Left/Right */
 
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW &inc_dec_kp RIGHT LEFT>;
+            sensor-bindings =
+                <&inc_dec_kp DOWN UP_ARROW>,
+                <&inc_dec_kp RIGHT LEFT_ARROW>;
         };
 
         nav_layer {
@@ -117,7 +119,9 @@
                                                                 &trans           &trans           &trans  &to 0    &to 0  &trans  &trans  &kp LEFT_ALT
             >;
 
-            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings =
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
+                <&inc_dec_kp LEFT RIGHT>;
         };
     };
 };
