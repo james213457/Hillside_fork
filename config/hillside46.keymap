@@ -106,7 +106,9 @@
                                                         &trans         &kp ENTER            &trans  &to 2    &to 0  &trans  &trans             &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = 
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>, 
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         sym_layer {
