@@ -126,7 +126,7 @@
             /* Left Encoder: Up/Down | Right Encoder: Left/Right */
 
             sensor-bindings =
-                <&inc_dec_kp &alt_tab_stay &alt_tab_stay_rev>,
+                <&inc_dec_behavior &alt_tab_stay &alt_tab_stay_rev>,
                 <&inc_dec_kp LC(Z) LC(Y)>;
         };
 
