@@ -103,8 +103,8 @@
 
             /* Left Encoder: Up/Down | Right Encoder: Left/Right */
 
-           sensor-bindings =
-                <&inc_dec_macro alt_tab_stay alt_tab_stay_rev>,
+            sensor-bindings =
+                <&inc_dec_kp TAB LS(TAB)>,
                 <&inc_dec_kp LC(Z) LC(Y)>;
         };
 
