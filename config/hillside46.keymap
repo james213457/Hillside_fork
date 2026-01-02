@@ -56,28 +56,6 @@
             bindings = <&kp LC(LS(DOWN))>;
             label = "SELECT_DOWN";
         };
-        alt_tab_stay: alt_tab_stay {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp TAB>;
-            label = "ALT_TAB_STAY";
-        };
-        alt_tab_release: alt_tab_release {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_release &kp LALT>;
-            label = "ALT_TAB_RELEASE";
-        };
-        alt_tab_stay_rev: alt_tab_stay_rev {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LALT>,
-                <&macro_press &kp LSHIFT>,
-                <&macro_tap &kp TAB>,
-                <&macro_release &kp LSHIFT>;
-            label = "ALT_TAB_STAY_REV";
-        };
     };
 
     combos {
