@@ -88,21 +88,25 @@
         Del {
             bindings = <&kp BACKSPACE>;
             key-positions = <3 4>;
+            layers = <1>;
         };
 
         Properties {
             bindings = <&kp P>;
             key-positions = <4 5>;
+            layers = <1>;
         };
 
         Normal_To {
             bindings = <&kp N>;
             key-positions = <16 17>;
+            layers = <1>;
         };
 
         Measure {
             bindings = <&kp M>;
             key-positions = <28 29>;
+            layers = <1>;
         };
     };
 
