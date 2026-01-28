@@ -85,7 +85,7 @@
             layers = <1>;
         };
 
-        Del {
+        Backsp {
             bindings = <&kp BACKSPACE>;
             key-positions = <3 4>;
             layers = <1>;
@@ -107,6 +107,11 @@
             bindings = <&kp M>;
             key-positions = <28 29>;
             layers = <1>;
+        };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <2 3>;
         };
     };
 
